@@ -1,0 +1,208 @@
+:root{
+    --primary-color : #FF7757;
+    --primary-btn : #FFD2C7;
+    --secondary-color : #331811;
+    --secondary-btn : #61291C;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.hero{
+    background: linear-gradient(#1c1c1cc5, #08080866),url(/img/heroo.jpg);
+    background-size: cover;
+    margin-top: -70px;
+    padding: 100px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+    .btn-primry{
+        background-color: var(--primary-color);
+        color: #ffff;
+        padding: 32px 32 22;
+        border-radius: 12px;
+        border: none;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+    }
+    
+    .btn-primry:hover{
+        background-color: var(--primary-color);
+        color: #fff;
+    }
+    
+    .btn-secndary{
+        border: none;
+        color: #ffff;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    .btn-secndary:hover{
+        color: #ffff;
+    }
+    
+    .btn-warning {
+        width: 150px;
+        height: 48px;
+        font-size: 14px;
+        font-weight: 700;
+        box-shadow: 20px;
+        text-shadow: 15px;
+        color: #030A4D;
+    }
+    
+    .btn-warning:hover{
+        background-color:#F6C90E;
+        color: #fff;
+    }
+    
+    
+    .text-hero{
+        padding-top: 10rem;
+        font-family: 'Playfair Display', sans-serif;
+        font-weight: 400;
+        color: #fff;
+    }
+    
+    .caption{
+    font-size: 20px;
+    font-weight: 300;
+    
+    }
+
+    /* About  */
+    .about{
+        margin-top: 50px;
+        background: #f9f9f9;
+      }
+      .about .card{
+        border-radius: 10px;
+      }
+      .about .card img{
+        border-radius: 10px;
+      }
+      .about h2{
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+
+     
+
+      .about p{
+        font-size: 500;
+      }
+      #about-btn{
+        background: none;
+        border: none;
+        cursor: pointer;
+        text-decoration: underline; 
+        padding: 5px;
+        font-size: 20px;
+
+      }
+
+      .main-txt h1{
+        font-weight: 200;
+        font-size: 35px;
+      }
+    
+      
+      .price{
+       align-items: flex-end;
+       justify-items: space-between;
+        justify-content: space-between;
+ 
+
+      }
+
+      /* about  */
+
+      .card-body {
+        /* background-color: #030A4D; */
+        box-shadow: 50px;
+        border: 5px solid #fff;
+      }
+
+      
+/* Dekstop  */
+    @media (min-width: 992px) {
+        .nav-link{
+            font-size: 14px;
+            color: #ffff;
+        }
+    
+        .nav-link:hover::after{
+            content: '';
+            display: block;
+            border-bottom: 3px solid #FF7757;
+            margin-bottom: -5px;
+            padding-bottom: 2px;
+        }
+
+    }
+
+    /* Tablet  */
+    @media (max-width: 991.98px) {
+        .hero {
+            margin-top: 10px;
+            padding: 50px 0;
+            /* height: auto; */
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: #000;
+            font-size: 20px;
+        }
+        
+        .nav-link {
+            font-size: 16px;
+            color: #000;
+        }
+
+        .navbar-toggler{
+            background-color: #61677A;
+            
+        }
+
+
+    }
+
+    /* Mobile  */
+    @media (max-width: 576px) {
+        .hero {
+            margin-top: 10px;
+            padding: 30px 0;
+        }
+
+        .navbar-toggler{
+            background-color: #61677A;
+            
+        }
+      
+        .nav-link:hover{
+            color: #000;
+        }
+
+        .card-body {
+            /* background-color: #030A4D; */
+            padding: 20px 10;
+            margin-left: 20px;
+            box-shadow: 50px;
+            border: 5px solid #fff;
+          }
+
+       
+    }
+
