@@ -128,11 +128,36 @@
 
       /* about  */
 
-      .card-body {
-        /* background-color: #030A4D; */
-        box-shadow: 50px;
-        border: 5px solid #fff;
-      }
+      .testimonial-img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+
+    .testimonial-card {
+        background-color: #f8f9fa;
+        width: 350px;
+        height: 204px;
+        /*border: none;
+        */border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -ms-border-radius: 10px ;
+        -o-border-radius: 10px ;
+        transition: transform 0.3s;
+}
+
+.testimonial-card:hover{
+    background-color: #FBD85D;
+    transform: scale(1.1); 
+    /* color: #FBD85D; */
+}
+
+
+
+ 
 
       
 /* Dekstop  */
@@ -152,6 +177,7 @@
 
     }
 
+    
     /* Tablet  */
     @media (max-width: 991.98px) {
         .hero {
@@ -171,10 +197,37 @@
             color: #000;
         }
 
+        .nav-link:hover {
+            font-size: 16px;
+            color: #000;
+        }
+
         .navbar-toggler{
             background-color: #61677A;
             
         }
+
+        .testimonial-card {
+            width: 100%;
+            margin-bottom: 20px; 
+        }
+
+        .review .testi {
+            /* background-color: #030A4D; */
+            display: flex;
+            margin: 15px 0 0;
+            text-align: center;
+            font-size: 12px;
+           
+        }
+
+        .testimonial-card .card-body {
+            /* properti lain */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+          
 
 
     }
@@ -191,17 +244,12 @@
             
         }
       
-        .nav-link:hover{
+
+        .nav-link:hover {
+            font-size: 16px;
             color: #000;
         }
 
-        .card-body {
-            /* background-color: #030A4D; */
-            padding: 20px 10;
-            margin-left: 20px;
-            box-shadow: 50px;
-            border: 5px solid #fff;
-          }
 
        
     }
