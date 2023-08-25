@@ -216,7 +216,8 @@
             /* background-color: #030A4D; */
             display: flex;
             margin: 15px 0 0;
-            text-align: center;
+            /* text-align: center; */
+            justify-content: center;
             font-size: 12px;
            
         }
@@ -227,7 +228,21 @@
             flex-direction: column;
             justify-content: center;
           }
+
+          .card-title {
+            font-size: 16px;
+            text-align: center;
+          }
           
+          .testimonial-card .card-body.review {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+          .testimonial-card .card-body.review img {
+            margin-left: 10px; /* untuk memberikan jarak antara gambar dan judul */
+          }
 
 
     }
@@ -251,6 +266,42 @@
         }
 
 
+        .testimonial-card {
+            width: 100%;
+            margin-bottom: 20px; 
+        }
+
+        .review .testi {
+            /* background-color: #030A4D; */
+            display: flex;
+            margin: 15px 0 0;
+            text-align: center;
+            font-size: 12px;
+           
+        }
+
+        .testimonial-card .card-body {
+            /* properti lain */
+            display: flex;
+            /* background-color: #030A4D; */
+            flex-direction: column;
+            justify-content: center;
+          }
+
+          .testimonial-card .card-body.review {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+          .testimonial-card .card-body.review img {
+            margin-left: 10px; 
+          }
+
+          .card-title {
+            font-size: 16px;
+            text-align: center;
+          }
        
     }
 
